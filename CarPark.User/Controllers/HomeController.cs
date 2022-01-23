@@ -8,9 +8,11 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using CarPark.Entities.Concrete;
 using Microsoft.Extensions.Localization;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using Newtonsoft.Json;
 
 namespace CarPark.User.Controllers
 {
@@ -18,16 +20,21 @@ namespace CarPark.User.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IStringLocalizer<HomeController> _localizer;
+        private readonly MongoClient client;
+
 
         public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
         {
           
             _logger = logger;
             _localizer = localizer;
+             client= new MongoClient("mongodb+srv://shnctn:shnctn05@carpark.vzj81.mongodb.net/CarParkDB?retryWrites=true&w=majority");
+           
         }
 
         public IActionResult Index()
         {
+            #region _localizerYedekleme
             var say_Hello_value1 = _localizer["Say_Hello"];
 
             var cultureInfo = CultureInfo.GetCultureInfo("en-US");
@@ -35,7 +42,7 @@ namespace CarPark.User.Controllers
             Thread.CurrentThread.CurrentUICulture = cultureInfo;
 
             var say_Hello_value = _localizer["Say_Hello"];
-            
+
             var customer = new Customer
             {
                 Id = 1,
@@ -72,7 +79,39 @@ namespace CarPark.User.Controllers
             //collection.InsertOne(test); 
             #endregion
 
-            _logger.LogError("customerda hata oluştu {@customer}",customer);
+            _logger.LogError("customerda hata oluştu {@customer}", customer); 
+            #endregion
+
+            var database = client.GetDatabase("CarParkDB");
+            var jsonString = System.IO.File.ReadAllText("cities.json");
+            var cities = JsonConvert.DeserializeObject<List<Cities>>(jsonString);
+            var citiesCollection = database.GetCollection<City>("City");
+            foreach (var item in cities)
+            {
+                var city = new City()
+                {
+                    Id = ObjectId.GenerateNewId(),
+                    Name = item.Name,
+                    Plate = item.Plate,
+                    Latitude = item.Latitude,
+                    Longitude = item.Longitude,
+                    Counties = new List<County>()
+
+
+                };
+                foreach (var item2 in item.Counties)
+                {
+                    city.Counties.Add(new County
+                    {
+                        Id=ObjectId.GenerateNewId(),
+                        Name=item2,
+                        Latitude = "",
+                        Longitude = "",
+                        Postcode = "",
+                    });
+                }
+                citiesCollection.InsertOne(city);
+            }
 
             return View();
         }
