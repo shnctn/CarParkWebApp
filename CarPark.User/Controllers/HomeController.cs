@@ -28,28 +28,28 @@ namespace CarPark.User.Controllers
           
             _logger = logger;
             _localizer = localizer;
-             client= new MongoClient("mongodb+srv://shnctn:shnctn05@carpark.vzj81.mongodb.net/CarParkDB?retryWrites=true&w=majority");
+         //    client= new MongoClient("MongoConnection");
            
         }
 
         public IActionResult Index()
         {
             #region _localizerYedekleme
-            var say_Hello_value1 = _localizer["Say_Hello"];
+            //var say_Hello_value1 = _localizer["Say_Hello"];
 
-            var cultureInfo = CultureInfo.GetCultureInfo("en-US");
-            Thread.CurrentThread.CurrentCulture = cultureInfo;
-            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            //var cultureInfo = CultureInfo.GetCultureInfo("en-US");
+            //Thread.CurrentThread.CurrentCulture = cultureInfo;
+            //Thread.CurrentThread.CurrentUICulture = cultureInfo;
 
-            var say_Hello_value = _localizer["Say_Hello"];
+            //var say_Hello_value = _localizer["Say_Hello"];
 
-            var customer = new Customer
-            {
-                Id = 1,
-                NameSurname = "şahinÇetin",
-                Age = 29
-            };
-
+            //var customer = new Customer
+            //{
+            //    Id = 1,
+            //    NameSurname = "şahinÇetin",
+            //    Age = 29
+            //}; _logger.LogError("customerda hata oluştu {@customer}", customer);
+            #endregion
             #region mongodb Kodları
 
             //var settings = MongoClientSettings.FromConnectionString("mongodb+srv://shnctn:shnctn05@carpark.vzj81.mongodb.net/CarParkDB?retryWrites=true&w=majority");
@@ -78,41 +78,40 @@ namespace CarPark.User.Controllers
             //};
             //collection.InsertOne(test); 
             #endregion
+            #region DBye veri eklenme
 
-            _logger.LogError("customerda hata oluştu {@customer}", customer); 
+            //var database = client.GetDatabase("CarParkDB");
+            //var jsonString = System.IO.File.ReadAllText("cities.json");
+            //var cities = JsonConvert.DeserializeObject<List<Cities>>(jsonString);
+            //var citiesCollection = database.GetCollection<City>("City");
+            //foreach (var item in cities)
+            //{
+            //    var city = new City()
+            //    {
+            //        Id = ObjectId.GenerateNewId(),
+            //        Name = item.Name,
+            //        Plate = item.Plate,
+            //        Latitude = item.Latitude,
+            //        Longitude = item.Longitude,
+            //        Counties = new List<County>()
+
+
+            //    };
+            //    foreach (var item2 in item.Counties)
+            //    {
+            //        city.Counties.Add(new County
+            //        {
+            //            Id = ObjectId.GenerateNewId(),
+            //            Name = item2,
+            //            Latitude = "",
+            //            Longitude = "",
+            //            Postcode = "",
+            //        });
+            //    }
+            //    citiesCollection.InsertOne(city);
+            //}
+
             #endregion
-
-            var database = client.GetDatabase("CarParkDB");
-            var jsonString = System.IO.File.ReadAllText("cities.json");
-            var cities = JsonConvert.DeserializeObject<List<Cities>>(jsonString);
-            var citiesCollection = database.GetCollection<City>("City");
-            foreach (var item in cities)
-            {
-                var city = new City()
-                {
-                    Id = ObjectId.GenerateNewId(),
-                    Name = item.Name,
-                    Plate = item.Plate,
-                    Latitude = item.Latitude,
-                    Longitude = item.Longitude,
-                    Counties = new List<County>()
-
-
-                };
-                foreach (var item2 in item.Counties)
-                {
-                    city.Counties.Add(new County
-                    {
-                        Id=ObjectId.GenerateNewId(),
-                        Name=item2,
-                        Latitude = "",
-                        Longitude = "",
-                        Postcode = "",
-                    });
-                }
-                citiesCollection.InsertOne(city);
-            }
-
             return View();
         }
 
@@ -125,6 +124,11 @@ namespace CarPark.User.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Dashboard()
+        {
+            return View();
         }
     }
 }

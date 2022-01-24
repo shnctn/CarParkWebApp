@@ -1,16 +1,23 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.Models;
+using CarPark.Business.Abstract;
+using CarPark.Business.Concrete;
+using CarPark.Core.Repository.Abstract;
+using CarPark.Core.Settings;
+using CarPark.DataAccess.Abstract;
+using CarPark.DataAccess.Concrete;
+using CarPark.DataAccess.Repository;
+using CarPark.Entities.Concrete;
 using CarPark.User.Resources;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 using Microsoft.Extensions.Options;
@@ -29,6 +36,32 @@ namespace CarPark.User
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(option =>
+            {
+                option.DefaultScheme = IdentityConstants.ApplicationScheme;
+                option.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+            }).AddIdentityCookies(o =>
+            {
+                
+            });
+            services.AddIdentityCore<Personel>(option =>
+                {
+
+                }).AddRoles<MongoIdentityRole>()
+                .AddMongoDbStores<Personel, MongoIdentityRole, Guid>(Configuration
+                    .GetSection("MongoConnection:ConnectionString").Value, Configuration
+                    .GetSection("MongoConnection:Database").Value)
+                .AddSignInManager()
+                .AddDefaultTokenProviders();
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.Cookie.HttpOnly = true;
+                option.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                option.LoginPath = "Account/Login";
+                option.SlidingExpiration = true;
+            });
+
+
             services.AddControllersWithViews();
             services.AddLocalization(opt => { opt.ResourcesPath = "Resources"; });
             services.AddMvc()
@@ -40,11 +73,18 @@ namespace CarPark.User
                     return factory.Create(nameof(SharedModelResources), assemblyName.Name);
                 }
             );
-           
-        
 
 
-        services.Configure<RequestLocalizationOptions>(opt =>
+            services.Configure<MongoSettings>(options =>
+                {
+                    options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                    options.Database = Configuration.GetSection("MongoConnection:Database").Value;
+                }
+            );
+            services.AddScoped(typeof(IRepository<>), typeof(MongoRepositoryBase<>));
+            services.AddScoped<IPersonelDataAccess, PersonelDataAccess>();
+            services.AddScoped<IPersonelService, PersonelManager>();
+            services.Configure<RequestLocalizationOptions>(opt =>
             {
                 var supportedCultures = new List<CultureInfo>{
                     new CultureInfo("en-US"),
@@ -89,7 +129,7 @@ namespace CarPark.User
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             var options = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
@@ -100,7 +140,8 @@ namespace CarPark.User
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{culture}/{controller=Home}/{action=Index}/{id?}");
+                                      //  pattern: "{culture}/{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

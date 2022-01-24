@@ -2299,3 +2299,697 @@ Newtonsoft.Json.JsonSerializationException: Error converting value "seyhan" to t
 2022-01-23 14:01:01.671 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
 2022-01-23 14:01:02.247 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
 2022-01-23 14:01:02.342 +03:00 [ERR] customerda hata oluştu {"Id":1,"NameSurname":"şahinÇetin","Age":29,"$type":"Customer"}
+2022-01-23 21:31:01.982 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 21:31:03.990 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 21:31:03.990 +03:00 [INF] Hosting environment: Development
+2022-01-23 21:31:03.990 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 21:31:04.138 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 21:31:04.216 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:31:04.339 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 21:31:13.859 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 9446.292ms
+2022-01-23 21:31:13.877 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:31:13.948 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoConfigurationException: The connection string 'MongoConnection' is not valid.
+   at MongoDB.Driver.Core.Configuration.ConnectionString.Parse()
+   at MongoDB.Driver.Core.Configuration.ConnectionString..ctor(String connectionString, IDnsResolver dnsResolver)
+   at MongoDB.Driver.Core.Configuration.ConnectionString..ctor(String connectionString)
+   at MongoDB.Driver.MongoUrlBuilder.Parse(String url)
+   at MongoDB.Driver.MongoUrlBuilder..ctor(String url)
+   at MongoDB.Driver.MongoUrl..ctor(String url)
+   at MongoDB.Driver.MongoClientSettings.FromConnectionString(String connectionString)
+   at MongoDB.Driver.MongoClient..ctor(String connectionString)
+   at CarPark.User.Controllers.HomeController..ctor(ILogger`1 logger, IStringLocalizer`1 localizer) in C:\Users\shn\source\repos\CarPark\CarPark.User\Controllers\HomeController.cs:line 31
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-23 21:31:14.640 +03:00 [INF] Request finished in 10510.6341ms 500 text/html; charset=utf-8
+2022-01-23 21:31:45.298 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 21:31:46.279 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 21:31:46.279 +03:00 [INF] Hosting environment: Development
+2022-01-23 21:31:46.279 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 21:31:46.343 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 21:31:46.411 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:31:46.527 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 21:31:46.728 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:31:46.739 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0324ms.
+2022-01-23 21:31:46.759 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 21:31:47.078 +03:00 [INF] Executed ViewResult - view Index executed in 325.8647ms.
+2022-01-23 21:31:47.079 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 551.4299ms
+2022-01-23 21:31:47.080 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:31:47.096 +03:00 [INF] Request finished in 761.2967ms 200 text/html; charset=utf-8
+2022-01-23 21:31:47.155 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+2022-01-23 21:31:47.164 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/lib/jquery/dist/jquery.min.js  
+2022-01-23 21:31:47.168 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2022-01-23 21:31:47.182 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/css/site.css  
+2022-01-23 21:31:47.221 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\css\site.css'
+2022-01-23 21:31:47.221 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\js\site.js'
+2022-01-23 21:31:47.221 +03:00 [INF] Request finished in 53.4734ms 200 application/javascript
+2022-01-23 21:31:47.221 +03:00 [INF] Request finished in 39.5575ms 200 text/css
+2022-01-23 21:31:47.226 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/lib/bootstrap/dist/css/bootstrap.min.css  
+2022-01-23 21:31:47.376 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2022-01-23 21:31:47.377 +03:00 [INF] Request finished in 222.336ms 200 application/javascript
+2022-01-23 21:31:47.387 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2022-01-23 21:31:47.387 +03:00 [INF] Request finished in 160.819ms 200 text/css
+2022-01-23 21:31:47.449 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\lib\jquery\dist\jquery.min.js'
+2022-01-23 21:31:47.449 +03:00 [INF] Request finished in 285.6092ms 200 application/javascript
+2022-01-23 21:31:59.611 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/user/create  
+2022-01-23 21:31:59.621 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:31:59.710 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2022-01-23 21:36:50.363 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 21:36:51.571 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 21:36:51.571 +03:00 [INF] Hosting environment: Development
+2022-01-23 21:36:51.571 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 21:36:51.699 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 21:36:51.760 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:36:51.885 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 21:36:52.167 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:36:52.186 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.7808ms.
+2022-01-23 21:36:52.233 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 21:36:52.524 +03:00 [INF] Executed ViewResult - view Index executed in 315.1208ms.
+2022-01-23 21:36:52.529 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 643.0361ms
+2022-01-23 21:36:52.530 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:36:52.536 +03:00 [INF] Request finished in 848.4076ms 200 text/html; charset=utf-8
+2022-01-23 21:37:10.696 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/user/create  
+2022-01-23 21:37:10.704 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:37:10.899 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2022-01-23 21:40:56.722 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 21:40:58.276 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 21:40:58.276 +03:00 [INF] Hosting environment: Development
+2022-01-23 21:40:58.276 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 21:40:58.380 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 21:40:58.475 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:40:58.619 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 21:40:58.776 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:40:58.791 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.9185ms.
+2022-01-23 21:40:58.819 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 21:40:59.085 +03:00 [INF] Executed ViewResult - view Index executed in 275.2888ms.
+2022-01-23 21:40:59.087 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 466.1401ms
+2022-01-23 21:40:59.088 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:40:59.100 +03:00 [INF] Request finished in 733.1085ms 200 text/html; charset=utf-8
+2022-01-23 21:41:09.026 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/user/create  
+2022-01-23 21:41:09.035 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:41:09.082 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2022-01-23 21:41:09.965 +03:00 [INF] Executing action method CarPark.User.Controllers.UserController.Create (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:41:28.987 +03:00 [INF] Executed action method CarPark.User.Controllers.UserController.Create (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19021.6118ms.
+2022-01-23 21:41:29.112 +03:00 [INF] Executing ViewResult, running view Create.
+2022-01-23 21:41:30.457 +03:00 [INF] Executed ViewResult - view Create executed in 1468.6573ms.
+2022-01-23 21:41:30.458 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 21375.6327ms
+2022-01-23 21:41:30.458 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:41:30.459 +03:00 [INF] Request finished in 21434.4416ms 200 text/html; charset=utf-8
+2022-01-23 21:41:30.512 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js  
+2022-01-23 21:41:30.525 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/lib/jquery-validation/dist/jquery.validate.min.js  
+2022-01-23 21:41:30.609 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2022-01-23 21:41:30.610 +03:00 [INF] Request finished in 98.0256ms 200 application/javascript
+2022-01-23 21:41:30.644 +03:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2022-01-23 21:41:30.645 +03:00 [INF] Request finished in 120.234ms 200 application/javascript
+2022-01-23 21:49:00.434 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 21:49:01.768 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 21:49:01.770 +03:00 [INF] Hosting environment: Development
+2022-01-23 21:49:01.770 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 21:49:01.889 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 21:49:01.978 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:49:02.125 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 21:49:02.289 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:49:02.301 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0266ms.
+2022-01-23 21:49:02.327 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 21:49:02.608 +03:00 [INF] Executed ViewResult - view Index executed in 288.8531ms.
+2022-01-23 21:49:02.609 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 482.9553ms
+2022-01-23 21:49:02.610 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 21:49:02.618 +03:00 [INF] Request finished in 739.373ms 200 text/html; charset=utf-8
+2022-01-23 21:49:07.312 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/user/create  
+2022-01-23 21:49:07.325 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:49:07.359 +03:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller CarPark.User.Controllers.UserController (CarPark.User).
+2022-01-23 21:49:08.156 +03:00 [INF] Executing action method CarPark.User.Controllers.UserController.Create (CarPark.User) - Validation state: "Valid"
+2022-01-23 21:49:19.357 +03:00 [INF] Executed action method CarPark.User.Controllers.UserController.Create (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11200.9216ms.
+2022-01-23 21:49:19.490 +03:00 [INF] Executing ViewResult, running view Create.
+2022-01-23 21:49:21.225 +03:00 [INF] Executed ViewResult - view Create executed in 1865.498ms.
+2022-01-23 21:49:21.225 +03:00 [INF] Executed action CarPark.User.Controllers.UserController.Create (CarPark.User) in 13865.6737ms
+2022-01-23 21:49:21.225 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.UserController.Create (CarPark.User)'
+2022-01-23 21:49:21.226 +03:00 [INF] Request finished in 13914.4641ms 200 text/html; charset=utf-8
+2022-01-23 23:20:22.639 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:20:23.703 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:20:23.705 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:20:23.705 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:20:23.810 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:20:23.889 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:20:24.041 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:20:24.077 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:20:24.445 +03:00 [INF] Executed ViewResult - view Index executed in 379.1ms.
+2022-01-23 23:20:24.450 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 408.0401ms
+2022-01-23 23:20:24.451 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:20:24.466 +03:00 [INF] Request finished in 659.993ms 200 text/html; charset=utf-8
+2022-01-23 23:20:37.691 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/personel/index  
+2022-01-23 23:20:37.698 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:20:37.702 +03:00 [INF] Route matched with {action = "Index", controller = "Personel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.PersonelController (CarPark.User).
+2022-01-23 23:20:44.297 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:20:44.312 +03:00 [INF] Executed action CarPark.User.Controllers.PersonelController.Index (CarPark.User) in 6609.895ms
+2022-01-23 23:20:44.314 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:20:44.318 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'CarPark.Core.Models.GetManyResult`1[CarPark.Entities.Concrete.Personel]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[CarPark.Entities.Concrete.Personel]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-23 23:20:44.460 +03:00 [INF] Request finished in 6769.5469ms 500 text/html; charset=utf-8
+2022-01-23 23:22:18.551 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:22:19.282 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:22:19.322 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:22:19.323 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:22:19.507 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:22:19.573 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:22:19.705 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:22:19.737 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:22:20.018 +03:00 [INF] Executed ViewResult - view Index executed in 289.8027ms.
+2022-01-23 23:22:20.022 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 315.803ms
+2022-01-23 23:22:20.023 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:22:20.036 +03:00 [INF] Request finished in 533.1445ms 200 text/html; charset=utf-8
+2022-01-23 23:22:39.511 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/personel/index  
+2022-01-23 23:22:39.520 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:22:39.524 +03:00 [INF] Route matched with {action = "Index", controller = "Personel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.PersonelController (CarPark.User).
+2022-01-23 23:23:45.419 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:23:45.688 +03:00 [INF] Executed action CarPark.User.Controllers.PersonelController.Index (CarPark.User) in 66164.0755ms
+2022-01-23 23:23:45.706 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:23:45.727 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'CarPark.Core.Models.GetManyResult`1[CarPark.Entities.Concrete.Personel]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.IEnumerable`1[CarPark.Entities.Concrete.Personel]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-23 23:23:45.904 +03:00 [INF] Request finished in 66393.045ms 500 text/html; charset=utf-8
+2022-01-23 23:25:08.913 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:25:10.217 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:25:10.218 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:25:10.218 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:25:10.317 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:25:10.401 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:25:10.546 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:25:10.704 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:25:10.716 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2001ms.
+2022-01-23 23:25:10.746 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:25:11.006 +03:00 [INF] Executed ViewResult - view Index executed in 263.7473ms.
+2022-01-23 23:25:11.007 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 459.5948ms
+2022-01-23 23:25:11.009 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:25:11.015 +03:00 [INF] Request finished in 707.3423ms 200 text/html; charset=utf-8
+2022-01-23 23:25:45.302 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/personel/index  
+2022-01-23 23:25:45.313 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:25:45.318 +03:00 [INF] Route matched with {action = "Index", controller = "Personel"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.PersonelController (CarPark.User).
+2022-01-23 23:25:46.103 +03:00 [INF] Executing action method CarPark.User.Controllers.PersonelController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:27:40.102 +03:00 [INF] Executed action method CarPark.User.Controllers.PersonelController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 113983.584ms.
+2022-01-23 23:27:40.293 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:27:41.637 +03:00 [INF] Executed ViewResult - view Index executed in 1533.6628ms.
+2022-01-23 23:27:41.638 +03:00 [INF] Executed action CarPark.User.Controllers.PersonelController.Index (CarPark.User) in 116318.9794ms
+2022-01-23 23:27:41.638 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.PersonelController.Index (CarPark.User)'
+2022-01-23 23:27:41.638 +03:00 [INF] Request finished in 116337.4935ms 200 text/html; charset=utf-8
+2022-01-23 23:49:18.656 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:49:20.062 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:49:20.063 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:49:20.063 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:49:20.173 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:49:20.232 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:49:20.331 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:49:20.477 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:49:20.488 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1335ms.
+2022-01-23 23:49:20.507 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:49:20.676 +03:00 [INF] Executed ViewResult - view Index executed in 177.4754ms.
+2022-01-23 23:49:20.677 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 345.9233ms
+2022-01-23 23:49:20.679 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:49:20.684 +03:00 [INF] Request finished in 519.1245ms 200 text/html; charset=utf-8
+2022-01-23 23:49:20.742 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/css/app.min.css  
+2022-01-23 23:49:20.746 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/css/core.min.css  
+2022-01-23 23:49:20.775 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/css/style.min.css  
+2022-01-23 23:49:20.776 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/js/core.min.js  
+2022-01-23 23:49:21.062 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/js/app.min.js  
+2022-01-23 23:49:21.075 +03:00 [INF] Sending file. Request path: '/assets/css/style.min.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\css\style.min.css'
+2022-01-23 23:49:21.076 +03:00 [INF] Request finished in 310.0718ms 200 text/css
+2022-01-23 23:49:21.080 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/js/script.min.js  
+2022-01-23 23:49:21.101 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/avatar/3.jpg  
+2022-01-23 23:49:21.102 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/avatar/4.jpg  
+2022-01-23 23:49:21.147 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/4.jpg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\avatar\4.jpg'
+2022-01-23 23:49:21.147 +03:00 [INF] Request finished in 44.8894ms 200 image/jpeg
+2022-01-23 23:49:21.156 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/avatar/1.jpg  
+2022-01-23 23:49:21.161 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/3.jpg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\avatar\3.jpg'
+2022-01-23 23:49:21.162 +03:00 [INF] Request finished in 60.4258ms 200 image/jpeg
+2022-01-23 23:49:21.164 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/avatar/5.jpg  
+2022-01-23 23:49:21.172 +03:00 [INF] Sending file. Request path: '/assets/js/script.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\js\script.min.js'
+2022-01-23 23:49:21.172 +03:00 [INF] Request finished in 92.4432ms 200 application/javascript
+2022-01-23 23:49:21.175 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/avatar/2.jpg  
+2022-01-23 23:49:21.185 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/1.jpg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\avatar\1.jpg'
+2022-01-23 23:49:21.193 +03:00 [INF] Request finished in 36.5176ms 200 image/jpeg
+2022-01-23 23:49:21.197 +03:00 [INF] Sending file. Request path: '/assets/js/app.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\js\app.min.js'
+2022-01-23 23:49:21.198 +03:00 [INF] Request finished in 136.263ms 200 application/javascript
+2022-01-23 23:49:21.201 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/2.jpg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\avatar\2.jpg'
+2022-01-23 23:49:21.202 +03:00 [INF] Request finished in 26.3262ms 200 image/jpeg
+2022-01-23 23:49:21.219 +03:00 [INF] Sending file. Request path: '/assets/js/core.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\js\core.min.js'
+2022-01-23 23:49:21.222 +03:00 [INF] Request finished in 445.5712ms 200 application/javascript
+2022-01-23 23:49:21.223 +03:00 [INF] Sending file. Request path: '/assets/img/avatar/5.jpg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\avatar\5.jpg'
+2022-01-23 23:49:21.223 +03:00 [INF] Request finished in 59.7365ms 200 image/jpeg
+2022-01-23 23:49:21.230 +03:00 [INF] Sending file. Request path: '/assets/css/core.min.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\css\core.min.css'
+2022-01-23 23:49:21.230 +03:00 [INF] Request finished in 483.5561ms 200 text/css
+2022-01-23 23:49:21.234 +03:00 [INF] Sending file. Request path: '/assets/css/app.min.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\css\app.min.css'
+2022-01-23 23:49:21.234 +03:00 [INF] Request finished in 491.9602ms 200 text/css
+2022-01-23 23:49:21.521 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-23 23:49:21.521 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/themify.woff?-fvbane  
+2022-01-23 23:49:21.521 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/material-icons/css/material-icons.css  
+2022-01-23 23:49:21.577 +03:00 [INF] Request finished in 56.5646ms 404 
+2022-01-23 23:49:21.580 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/i8-icon/jquery-i8-icon.min.js  
+2022-01-23 23:49:21.581 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/typeahead/bloodhound.min.js  
+2022-01-23 23:49:21.583 +03:00 [INF] Sending file. Request path: '/assets/vendor/material-icons/css/material-icons.css'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\material-icons\css\material-icons.css'
+2022-01-23 23:49:21.583 +03:00 [INF] Request finished in 61.6591ms 200 text/css
+2022-01-23 23:49:21.595 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/screenfull/screenfull.min.js  
+2022-01-23 23:49:21.615 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/typed.js/typed.min.js  
+2022-01-23 23:49:21.674 +03:00 [INF] Sending file. Request path: '/assets/vendor/screenfull/screenfull.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\screenfull\screenfull.min.js'
+2022-01-23 23:49:21.675 +03:00 [INF] Request finished in 79.3492ms 200 application/javascript
+2022-01-23 23:49:21.676 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/typeahead/typeahead.jquery.min.js  
+2022-01-23 23:49:21.677 +03:00 [INF] Sending file. Request path: '/assets/vendor/i8-icon/jquery-i8-icon.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\i8-icon\jquery-i8-icon.min.js'
+2022-01-23 23:49:21.678 +03:00 [INF] Request finished in 97.3561ms 200 application/javascript
+2022-01-23 23:49:21.679 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-23 23:49:21.681 +03:00 [INF] Sending file. Request path: '/assets/vendor/typed.js/typed.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\typed.js\typed.min.js'
+2022-01-23 23:49:21.682 +03:00 [INF] Request finished in 66.8079ms 200 application/javascript
+2022-01-23 23:49:21.692 +03:00 [INF] Request finished in 12.8222ms 404 
+2022-01-23 23:49:21.694 +03:00 [INF] Sending file. Request path: '/assets/vendor/typeahead/bloodhound.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\typeahead\bloodhound.min.js'
+2022-01-23 23:49:21.694 +03:00 [INF] Request finished in 113.3512ms 200 application/javascript
+2022-01-23 23:49:21.703 +03:00 [INF] Sending file. Request path: '/assets/fonts/themify.woff'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\fonts\themify.woff'
+2022-01-23 23:49:21.703 +03:00 [INF] Request finished in 183.3199ms 200 application/font-woff
+2022-01-23 23:49:21.764 +03:00 [INF] Sending file. Request path: '/assets/vendor/typeahead/typeahead.jquery.min.js'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\typeahead\typeahead.jquery.min.js'
+2022-01-23 23:49:21.765 +03:00 [INF] Request finished in 89.2057ms 200 application/javascript
+2022-01-23 23:49:21.765 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-23 23:49:21.730 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/material-icons/fonts/MaterialIcons-Regular.woff2  
+2022-01-23 23:49:21.766 +03:00 [INF] Request finished in 0.9457ms 404 
+2022-01-23 23:49:21.847 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/vendor/i8-icon/i8-color-icons.svg  
+2022-01-23 23:49:21.877 +03:00 [INF] Sending file. Request path: '/assets/vendor/material-icons/fonts/MaterialIcons-Regular.woff2'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\material-icons\fonts\MaterialIcons-Regular.woff2'
+2022-01-23 23:49:21.877 +03:00 [INF] Request finished in 150.0548ms 200 font/woff2
+2022-01-23 23:49:21.878 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/data/json/files.json  
+2022-01-23 23:49:21.937 +03:00 [INF] Sending file. Request path: '/assets/data/json/files.json'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\data\json\files.json'
+2022-01-23 23:49:21.937 +03:00 [INF] Request finished in 59.6827ms 200 application/json
+2022-01-23 23:49:21.955 +03:00 [INF] Sending file. Request path: '/assets/vendor/i8-icon/i8-color-icons.svg'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\vendor\i8-icon\i8-color-icons.svg'
+2022-01-23 23:49:21.955 +03:00 [INF] Request finished in 107.8381ms 200 image/svg+xml
+2022-01-23 23:49:22.140 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/img/favicon.png  
+2022-01-23 23:49:22.152 +03:00 [INF] Sending file. Request path: '/assets/img/favicon.png'. Physical path: 'C:\Users\shn\source\repos\CarPark\CarPark.User\wwwroot\assets\img\favicon.png'
+2022-01-23 23:49:22.153 +03:00 [INF] Request finished in 12.752ms 200 image/png
+2022-01-23 23:49:31.966 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:49:31.969 +03:00 [INF] Request finished in 3.239ms 404 
+2022-01-23 23:49:37.308 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:49:37.310 +03:00 [INF] Request finished in 2.5453ms 404 
+2022-01-23 23:55:23.011 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:55:24.715 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:55:24.715 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:55:24.715 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:55:25.056 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:55:25.130 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:55:25.299 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:55:25.579 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:55:25.598 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2258ms.
+2022-01-23 23:55:25.632 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:55:25.918 +03:00 [INF] Executed ViewResult - view Index executed in 301.7536ms.
+2022-01-23 23:55:25.921 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 575.9594ms
+2022-01-23 23:55:25.923 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:55:25.929 +03:00 [INF] Request finished in 882.9493ms 200 text/html; charset=utf-8
+2022-01-23 23:55:26.408 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-23 23:55:26.925 +03:00 [INF] Request finished in 516.8639ms 404 
+2022-01-23 23:55:26.985 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-23 23:55:26.994 +03:00 [INF] Request finished in 10.4392ms 404 
+2022-01-23 23:55:27.008 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-23 23:55:27.009 +03:00 [INF] Request finished in 0.9709ms 404 
+2022-01-23 23:56:22.742 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/home/dashboard  
+2022-01-23 23:56:22.744 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-01-23 23:56:22.752 +03:00 [INF] Route matched with {action = "Dashboard", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:56:22.828 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Dashboard (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:56:22.828 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Dashboard (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2971ms.
+2022-01-23 23:56:22.830 +03:00 [INF] Executing ViewResult, running view Dashboard.
+2022-01-23 23:56:22.838 +03:00 [INF] Executed ViewResult - view Dashboard executed in 9.7819ms.
+2022-01-23 23:56:22.839 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Dashboard (CarPark.User) in 86.7094ms
+2022-01-23 23:56:22.839 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-01-23 23:56:22.840 +03:00 [INF] Request finished in 98.2812ms 200 text/html; charset=utf-8
+2022-01-23 23:56:23.019 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-23 23:56:23.024 +03:00 [INF] Request finished in 5.0679ms 404 
+2022-01-23 23:56:23.088 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-23 23:56:23.096 +03:00 [INF] Request finished in 7.8716ms 404 
+2022-01-23 23:56:23.155 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-23 23:56:23.156 +03:00 [INF] Request finished in 1.2427ms 404 
+2022-01-23 23:56:40.013 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:56:40.019 +03:00 [INF] Request finished in 5.9004ms 404 
+2022-01-23 23:57:57.147 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:57:58.299 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:57:58.300 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:57:58.300 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:57:58.384 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:57:58.435 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:57:58.540 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:57:58.668 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:57:58.684 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.9253ms.
+2022-01-23 23:57:58.723 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-23 23:57:58.899 +03:00 [INF] Executed ViewResult - view Index executed in 196.1438ms.
+2022-01-23 23:57:58.900 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 358.8612ms
+2022-01-23 23:57:58.902 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-23 23:57:58.911 +03:00 [INF] Request finished in 534.8047ms 200 text/html; charset=utf-8
+2022-01-23 23:57:59.169 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-23 23:57:59.208 +03:00 [INF] Request finished in 38.8536ms 404 
+2022-01-23 23:57:59.265 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/home/dashboard  
+2022-01-23 23:57:59.267 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-01-23 23:57:59.278 +03:00 [INF] Route matched with {action = "Dashboard", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-23 23:57:59.342 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Dashboard (CarPark.User) - Validation state: "Valid"
+2022-01-23 23:57:59.340 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-23 23:57:59.342 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Dashboard (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2943ms.
+2022-01-23 23:57:59.344 +03:00 [INF] Request finished in 4.5175ms 404 
+2022-01-23 23:57:59.346 +03:00 [INF] Executing ViewResult, running view Dashboard.
+2022-01-23 23:57:59.364 +03:00 [INF] Executed ViewResult - view Dashboard executed in 19.7593ms.
+2022-01-23 23:57:59.364 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Dashboard (CarPark.User) in 85.0013ms
+2022-01-23 23:57:59.364 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Dashboard (CarPark.User)'
+2022-01-23 23:57:59.364 +03:00 [INF] Request finished in 99.465ms 200 text/html; charset=utf-8
+2022-01-23 23:57:59.470 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-23 23:57:59.473 +03:00 [INF] Request finished in 3.7901ms 404 
+2022-01-23 23:57:59.543 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-23 23:57:59.547 +03:00 [INF] Request finished in 4.7971ms 404 
+2022-01-23 23:57:59.757 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-23 23:57:59.761 +03:00 [INF] Request finished in 3.8473ms 404 
+2022-01-23 23:58:04.639 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:58:04.642 +03:00 [INF] Request finished in 3.0022ms 404 
+2022-01-23 23:59:32.315 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:59:32.319 +03:00 [INF] Request finished in 4.6983ms 404 
+2022-01-23 23:59:35.769 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:59:35.771 +03:00 [INF] Request finished in 2.7903ms 404 
+2022-01-23 23:59:37.087 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:59:37.089 +03:00 [INF] Request finished in 2.7263ms 404 
+2022-01-23 23:59:42.857 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/dashboard/index.html  
+2022-01-23 23:59:42.862 +03:00 [INF] Request finished in 5.3852ms 404 
+2022-01-23 23:59:58.905 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-23 23:59:59.835 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-23 23:59:59.836 +03:00 [INF] Hosting environment: Development
+2022-01-23 23:59:59.836 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-23 23:59:59.933 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-23 23:59:59.997 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 00:00:00.114 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 00:00:00.278 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 00:00:00.295 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.026ms.
+2022-01-24 00:00:00.320 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 00:00:00.541 +03:00 [INF] Executed ViewResult - view Index executed in 231.991ms.
+2022-01-24 00:00:00.543 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 427.7925ms
+2022-01-24 00:00:00.544 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 00:00:00.550 +03:00 [INF] Request finished in 624.8995ms 200 text/html; charset=utf-8
+2022-01-24 00:00:00.908 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-24 00:00:01.025 +03:00 [INF] Request finished in 121.112ms 404 
+2022-01-24 00:00:01.106 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-24 00:00:01.109 +03:00 [INF] Request finished in 3.303ms 404 
+2022-01-24 00:00:01.254 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-24 00:00:01.255 +03:00 [INF] Request finished in 1.2665ms 404 
+2022-01-24 00:00:06.991 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Views/Home/Dashboard.cshtml  
+2022-01-24 00:00:06.994 +03:00 [INF] Request finished in 3.3612ms 404 
+2022-01-24 00:00:20.358 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Views/Home/Dashboard.cshtml  
+2022-01-24 00:00:20.362 +03:00 [INF] Request finished in 3.8772ms 404 
+2022-01-24 11:54:48.025 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 11:54:50.391 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 11:54:50.392 +03:00 [INF] Hosting environment: Development
+2022-01-24 11:54:50.392 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 11:54:50.532 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 11:54:50.634 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 11:54:50.900 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 11:54:51.239 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 11:54:51.254 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0831ms.
+2022-01-24 11:54:51.280 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 11:54:51.882 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 11:54:51.893 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 11:54:51.894 +03:00 [INF] Executed ViewResult - view Index executed in 609.0069ms.
+2022-01-24 11:54:51.895 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 11:54:51.896 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 993.5869ms
+2022-01-24 11:54:51.936 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 11:54:51.936 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 11:54:51.938 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.8285ms.
+2022-01-24 11:54:51.938 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 11:54:51.942 +03:00 [INF] Request finished in 1422.8655ms 200 text/html; charset=utf-8
+2022-01-24 11:54:51.977 +03:00 [ERR] The view 'Register' was not found. Searched locations: ["/Views/Account/Register.tr-TR.cshtml","/Views/Account/Register.tr.cshtml","/Views/Account/Register.cshtml","/Views/Shared/Register.tr-TR.cshtml","/Views/Shared/Register.tr.cshtml","/Views/Shared/Register.cshtml","/Pages/Shared/Register.tr-TR.cshtml","/Pages/Shared/Register.tr.cshtml","/Pages/Shared/Register.cshtml"]
+2022-01-24 11:54:52.083 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 187.7241ms
+2022-01-24 11:54:52.086 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 11:54:52.093 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Register' was not found. The following locations were searched:
+/Views/Account/Register.tr-TR.cshtml
+/Views/Account/Register.tr.cshtml
+/Views/Account/Register.cshtml
+/Views/Shared/Register.tr-TR.cshtml
+/Views/Shared/Register.tr.cshtml
+/Views/Shared/Register.cshtml
+/Pages/Shared/Register.tr-TR.cshtml
+/Pages/Shared/Register.tr.cshtml
+/Pages/Shared/Register.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-01-24 11:54:52.793 +03:00 [INF] Request finished in 910.414ms 500 text/html; charset=utf-8
+2022-01-24 12:24:39.556 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 12:24:41.295 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 12:24:41.295 +03:00 [INF] Hosting environment: Development
+2022-01-24 12:24:41.296 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 12:24:41.390 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 12:24:41.459 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 12:24:41.651 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 12:24:41.830 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:24:41.844 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9277ms.
+2022-01-24 12:24:41.870 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 12:24:42.079 +03:00 [INF] Executed ViewResult - view Index executed in 217.7166ms.
+2022-01-24 12:24:42.081 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 428.6132ms
+2022-01-24 12:24:42.085 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 12:24:42.100 +03:00 [INF] Request finished in 719.9434ms 200 text/html; charset=utf-8
+2022-01-24 12:24:42.367 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-24 12:24:42.403 +03:00 [INF] Request finished in 36.1195ms 404 
+2022-01-24 12:24:42.569 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-24 12:24:42.586 +03:00 [INF] Request finished in 16.5654ms 404 
+2022-01-24 12:24:42.633 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-24 12:24:42.636 +03:00 [INF] Request finished in 2.8873ms 404 
+2022-01-24 12:24:56.301 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 12:24:56.303 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:24:56.310 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:24:56.352 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:24:56.353 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3611ms.
+2022-01-24 12:24:56.356 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 12:24:56.514 +03:00 [INF] Executed ViewResult - view Register executed in 161.1016ms.
+2022-01-24 12:24:56.515 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 204.3784ms
+2022-01-24 12:24:56.515 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:24:56.515 +03:00 [INF] Request finished in 215.6273ms 200 text/html; charset=utf-8
+2022-01-24 12:25:03.323 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44347/Account/Register application/x-www-form-urlencoded 226
+2022-01-24 12:25:03.325 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:25:03.341 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Boolean) on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:25:03.402 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:25:03.403 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3378ms.
+2022-01-24 12:25:03.404 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 12:25:03.430 +03:00 [INF] Executed ViewResult - view Register executed in 26.0774ms.
+2022-01-24 12:25:03.430 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 88.5993ms
+2022-01-24 12:25:03.430 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:25:03.430 +03:00 [INF] Request finished in 111.1577ms 200 text/html; charset=utf-8
+2022-01-24 12:25:04.312 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44347/Account/Register application/x-www-form-urlencoded 226
+2022-01-24 12:25:04.316 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:25:04.318 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Boolean) on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:25:04.356 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:25:04.357 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1159ms.
+2022-01-24 12:25:04.358 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 12:25:04.362 +03:00 [INF] Executed ViewResult - view Register executed in 5.1566ms.
+2022-01-24 12:25:04.363 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 43.4043ms
+2022-01-24 12:25:04.363 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:25:04.364 +03:00 [INF] Request finished in 53.1193ms 200 text/html; charset=utf-8
+2022-01-24 12:30:06.101 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 12:30:07.317 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 12:30:07.318 +03:00 [INF] Hosting environment: Development
+2022-01-24 12:30:07.318 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 12:30:07.431 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 12:30:07.503 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 12:30:07.599 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 12:30:07.755 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:30:07.768 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2956ms.
+2022-01-24 12:30:07.787 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 12:30:08.007 +03:00 [INF] Executed ViewResult - view Index executed in 223.6803ms.
+2022-01-24 12:30:08.008 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 407.8503ms
+2022-01-24 12:30:08.009 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 12:30:08.019 +03:00 [INF] Request finished in 596.7888ms 200 text/html; charset=utf-8
+2022-01-24 12:30:08.256 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-24 12:30:08.398 +03:00 [INF] Request finished in 142.1239ms 404 
+2022-01-24 12:30:08.478 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-24 12:30:08.485 +03:00 [INF] Request finished in 6.829ms 404 
+2022-01-24 12:30:08.662 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-24 12:30:08.665 +03:00 [INF] Request finished in 3.1346ms 404 
+2022-01-24 12:30:12.327 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 12:30:12.331 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:30:12.339 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:30:12.381 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:30:12.382 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.357ms.
+2022-01-24 12:30:12.384 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 12:30:12.512 +03:00 [INF] Executed ViewResult - view Register executed in 129.7908ms.
+2022-01-24 12:30:12.512 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 173.5704ms
+2022-01-24 12:30:12.512 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:30:12.513 +03:00 [INF] Request finished in 186.0397ms 200 text/html; charset=utf-8
+2022-01-24 12:30:24.245 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account  
+2022-01-24 12:30:24.253 +03:00 [INF] Request finished in 9.1741ms 404 
+2022-01-24 12:30:26.632 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 12:30:26.634 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:30:26.639 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:30:26.683 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 12:30:26.683 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1477ms.
+2022-01-24 12:30:26.684 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 12:30:26.693 +03:00 [INF] Executed ViewResult - view Register executed in 9.3238ms.
+2022-01-24 12:30:26.694 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 52.9168ms
+2022-01-24 12:30:26.694 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:30:26.694 +03:00 [INF] Request finished in 62.0782ms 200 text/html; charset=utf-8
+2022-01-24 12:30:29.932 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44347/Account/Register application/x-www-form-urlencoded 253
+2022-01-24 12:30:29.933 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 12:30:29.955 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(CarPark.Models.RequestModels.Account.RegisterCreateModel, System.String) on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 12:30:30.041 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Invalid"
+2022-01-24 13:17:34.171 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 13:17:35.360 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 13:17:35.360 +03:00 [INF] Hosting environment: Development
+2022-01-24 13:17:35.360 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 13:17:35.466 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 13:17:35.466 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 13:17:35.562 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:17:35.562 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:17:35.663 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 13:17:35.663 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 13:17:35.828 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:17:35.828 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:17:35.837 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0222ms.
+2022-01-24 13:17:35.837 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9616ms.
+2022-01-24 13:17:35.860 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 13:17:35.860 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 13:17:36.035 +03:00 [INF] Executed ViewResult - view Index executed in 171.7178ms.
+2022-01-24 13:17:36.039 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 375.3129ms
+2022-01-24 13:17:36.040 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:17:36.045 +03:00 [INF] Request finished in 586.3114ms 200 text/html; charset=utf-8
+2022-01-24 13:17:36.148 +03:00 [INF] Executed ViewResult - view Register executed in 304.1399ms.
+2022-01-24 13:17:36.149 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 485.205ms
+2022-01-24 13:17:36.149 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:17:36.151 +03:00 [INF] Request finished in 692.9811ms 200 text/html; charset=utf-8
+2022-01-24 13:18:02.970 +03:00 [INF] Request starting HTTP/2.0 POST https://localhost:44347/Account/Register application/x-www-form-urlencoded 280
+2022-01-24 13:18:02.974 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:18:02.993 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(CarPark.Models.RequestModels.Account.RegisterCreateModel, System.String) on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 13:18:03.107 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:18:03.108 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3214ms.
+2022-01-24 13:18:03.109 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 13:18:03.147 +03:00 [INF] Executed ViewResult - view Register executed in 38.928ms.
+2022-01-24 13:18:03.148 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 154.2813ms
+2022-01-24 13:18:03.148 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:18:03.148 +03:00 [INF] Request finished in 187.646ms 200 text/html; charset=utf-8
+2022-01-24 13:20:13.609 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 13:20:14.950 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 13:20:14.950 +03:00 [INF] Hosting environment: Development
+2022-01-24 13:20:14.950 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 13:20:15.069 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 13:20:15.137 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:20:15.266 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 13:20:15.409 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:20:15.425 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.8846ms.
+2022-01-24 13:20:15.451 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 13:20:15.716 +03:00 [INF] Executed ViewResult - view Index executed in 206.0526ms.
+2022-01-24 13:20:15.731 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 463.3533ms
+2022-01-24 13:20:15.733 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:20:15.740 +03:00 [INF] Request finished in 680.2364ms 200 text/html; charset=utf-8
+2022-01-24 13:20:16.008 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-24 13:20:16.091 +03:00 [INF] Request finished in 83.5847ms 404 
+2022-01-24 13:20:16.178 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-24 13:20:16.187 +03:00 [INF] Request finished in 8.1533ms 404 
+2022-01-24 13:20:16.285 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-24 13:20:16.287 +03:00 [INF] Request finished in 1.817ms 404 
+2022-01-24 13:20:23.697 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/Account/Register  
+2022-01-24 13:20:23.699 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:20:23.703 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CarPark.User.Controllers.AccountController (CarPark.User).
+2022-01-24 13:20:23.753 +03:00 [INF] Executing action method CarPark.User.Controllers.AccountController.Register (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:20:23.754 +03:00 [INF] Executed action method CarPark.User.Controllers.AccountController.Register (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3191ms.
+2022-01-24 13:20:23.759 +03:00 [INF] Executing ViewResult, running view Register.
+2022-01-24 13:20:23.914 +03:00 [INF] Executed ViewResult - view Register executed in 157.1076ms.
+2022-01-24 13:20:23.914 +03:00 [INF] Executed action CarPark.User.Controllers.AccountController.Register (CarPark.User) in 210.799ms
+2022-01-24 13:20:23.914 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.AccountController.Register (CarPark.User)'
+2022-01-24 13:20:23.915 +03:00 [INF] Request finished in 220.3208ms 200 text/html; charset=utf-8
+2022-01-24 13:29:14.466 +03:00 [INF] User profile is available. Using 'C:\Users\shn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-01-24 13:29:15.527 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-01-24 13:29:15.527 +03:00 [INF] Hosting environment: Development
+2022-01-24 13:29:15.528 +03:00 [INF] Content root path: C:\Users\shn\source\repos\CarPark\CarPark.User
+2022-01-24 13:29:15.630 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/  
+2022-01-24 13:29:15.710 +03:00 [INF] Executing endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:29:15.814 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.User.Controllers.HomeController (CarPark.User).
+2022-01-24 13:29:16.038 +03:00 [INF] Executing action method CarPark.User.Controllers.HomeController.Index (CarPark.User) - Validation state: "Valid"
+2022-01-24 13:29:16.054 +03:00 [INF] Executed action method CarPark.User.Controllers.HomeController.Index (CarPark.User), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1023ms.
+2022-01-24 13:29:16.082 +03:00 [INF] Executing ViewResult, running view Index.
+2022-01-24 13:29:16.357 +03:00 [INF] Executed ViewResult - view Index executed in 287.0071ms.
+2022-01-24 13:29:16.361 +03:00 [INF] Executed action CarPark.User.Controllers.HomeController.Index (CarPark.User) in 546.2495ms
+2022-01-24 13:29:16.364 +03:00 [INF] Executed endpoint 'CarPark.User.Controllers.HomeController.Index (CarPark.User)'
+2022-01-24 13:29:16.385 +03:00 [INF] Request finished in 765.9197ms 200 text/html; charset=utf-8
+2022-01-24 13:29:16.669 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2022-01-24 13:29:16.995 +03:00 [INF] Request finished in 325.1352ms 404 
+2022-01-24 13:29:17.056 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.woff?v=4.7.0  
+2022-01-24 13:29:17.064 +03:00 [INF] Request finished in 8.9063ms 404 
+2022-01-24 13:29:17.073 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44347/assets/fonts/fontawesome-webfont.ttf?v=4.7.0  
+2022-01-24 13:29:17.077 +03:00 [INF] Request finished in 3.3593ms 404 
